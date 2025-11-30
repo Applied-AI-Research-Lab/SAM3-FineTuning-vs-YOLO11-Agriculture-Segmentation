@@ -1,6 +1,27 @@
-MIT License
+COMPOSITE LICENSE
+=================================================================================
 
-Copyright (c) 2025 Konstantinos I. Roumeliotis
+This project consists of original framework code and integrations with 
+third-party models and libraries, each subject to their respective licenses.
+
+=================================================================================
+PART 1: ORIGINAL FRAMEWORK CODE (MIT License)
+=================================================================================
+
+The following original components are Copyright (c) 2025 by:
+  - Dr. Konstantinos I. Roumeliotis (University of the Peloponnese, Department of Informatics and Telecommunications, Greece)
+  - Dr. Ranjan Sapkota (Cornell University, Biological & Environmental Engineering, Ithaca, New York, USA)
+
+ORIGINAL COMPONENTS COVERED:
+  • Project architecture and workflow design
+  • All shell scripts: datasets.sh, ft_*.sh, prediction_*.sh
+  • All modules in src/: evaluation.py, visualization.py, data_loader.py,
+    segmentation.py, batch_processing.py, advanced_prompting.py, 
+    latex_report.py, download_dataset.py
+  • Integration code in models/: train_*.py, predict_*.py wrapper scripts
+  • Directory structure and organizational design
+
+MIT License Terms:
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +40,133 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+=================================================================================
+PART 2: THIRD-PARTY DEPENDENCIES AND THEIR LICENSES
+=================================================================================
+
+This project integrates with the following third-party components:
+
+1. SAM3 (Segment Anything Model 3) by Meta AI
+   License: Meta SAM License (Custom Research License)
+   Source: https://huggingface.co/facebook/sam3
+   Applies to: Pre-trained SAM3 model weights and Meta's model code
+   Note: See https://github.com/facebookresearch/segment-anything/blob/main/LICENSE
+         for complete SAM license terms. Key requirements:
+         - Non-commercial research use encouraged
+         - Acknowledge use in publications
+         - Comply with Meta's acceptable use policies
+
+2. YOLO11 (YOLOv11) by Ultralytics
+   License: AGPL-3.0 (with commercial licensing option)
+   Source: https://github.com/ultralytics/ultralytics
+   Applies to: YOLO11 model architecture and Ultralytics framework
+   Note: For commercial use, may require Ultralytics Enterprise License
+         See: https://ultralytics.com/license
+
+3. PyTorch
+   License: BSD-3-Clause License
+   Copyright: Facebook, Inc. and its affiliates
+   Source: https://github.com/pytorch/pytorch
+
+4. Transformers (Hugging Face)
+   License: Apache License 2.0
+   Source: https://github.com/huggingface/transformers
+
+5. PEFT (Parameter-Efficient Fine-Tuning)
+   License: Apache License 2.0
+   Source: https://github.com/huggingface/peft
+
+6. Additional Python Libraries:
+   - NumPy (BSD License)
+   - OpenCV (Apache 2.0)
+   - Pillow (PIL License)
+   - Matplotlib (PSF-based License)
+   - tqdm (MIT/MPL)
+
+=================================================================================
+PART 3: DATASETS
+=================================================================================
+
+This framework uses the following datasets (not included in repository):
+
+1. MinneApple Dataset
+   Source: University of Minnesota
+   License: Check with dataset providers for usage terms
+   Citation: Required when using this dataset
+
+2. WeedsGalore Dataset
+   Source: Agricultural research community
+   License: Check with dataset providers for usage terms
+   Citation: Required when using this dataset
+
+Note: Datasets are downloaded separately and subject to their own licenses.
+
+=================================================================================
+PART 4: USAGE REQUIREMENTS
+=================================================================================
+
+When using this framework, you MUST:
+
+1. ATTRIBUTION:
+   Include the copyright notice for the original framework code (Part 1)
+   in all copies or substantial portions.
+
+2. ACADEMIC CITATION:
+   If used in research, cite the original authors:
+
+   Roumeliotis, K. I., & Sapkota, R. (2025). SAM3 Fine-Tuning Framework 
+   for Agricultural Instance Segmentation: A Comprehensive Comparison 
+   with YOLO11. University of the Peloponnese, Department of Informatics 
+   and Telecommunications, Greece and Cornell University, Biological & 
+   Environmental Engineering, Ithaca, New York, USA.
+
+   BibTeX:
+   @software{sam3_roumeliotis_sapkota_2025,
+     author = {Roumeliotis, Konstantinos I. and Sapkota, Ranjan},
+     title = {SAM3 Fine-Tuning Framework for Agricultural Instance Segmentation},
+     year = {2025},
+     institution = {University of the Peloponnese, Department of Informatics and Telecommunications, Greece and Cornell University, Biological & Environmental Engineering, Ithaca, New York, USA},
+     url = {https://github.com/Applied-AI-Research-Lab/SAM3-FineTuning-vs-YOLO11-Agriculture-Segmentation}
+   }
+
+3. THIRD-PARTY COMPLIANCE:
+   Comply with all licenses of integrated components (see Part 2).
+   Particularly note:
+   - SAM3: Follow Meta's SAM License terms
+   - YOLO11: AGPL-3.0 requires open-sourcing derivative works
+             (or obtain commercial license for proprietary use)
+
+4. DATASET COMPLIANCE:
+   Obtain appropriate permissions and follow citation requirements
+   for any datasets used.
+
+=================================================================================
+PART 5: CLARIFICATIONS
+=================================================================================
+
+WHAT YOU OWN UNDER THIS LICENSE:
+  ✓ The framework architecture and integration design
+  ✓ Your own trained model checkpoints (in ft/ directory)
+  ✓ Your generated predictions and results
+  ✓ Custom modifications to the framework code
+
+WHAT YOU DO NOT OWN:
+  ✗ Pre-trained SAM3 model weights (Meta owns these)
+  ✗ YOLO11 architecture and pre-trained weights (Ultralytics owns these)
+  ✗ Third-party library code (respective copyright holders)
+  ✗ Downloaded datasets (original dataset creators)
+
+COMMERCIAL USE:
+  - Framework code (Part 1): MIT license allows commercial use
+  - SAM3: Check Meta's SAM License for commercial restrictions
+  - YOLO11: Requires Ultralytics commercial license for proprietary products
+  - Always verify current license terms with upstream projects
+
+=================================================================================
+
+For questions about licensing, contact:
+  - Dr. Konstantinos I. Roumeliotis (University of the Peloponnese, Department of Informatics and Telecommunications, Greece)
+  - Dr. Ranjan Sapkota (Cornell University, Biological & Environmental Engineering, Ithaca, New York, USA)
+
+Last Updated: November 30, 2025
