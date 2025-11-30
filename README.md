@@ -376,7 +376,7 @@ Edit training scripts to adjust:
 If you use this framework in your research or projects, please cite:
 
 ```bibtex
-@software{roumeliotis_sapkota_2025,
+@software{sam3_roumeliotis_sapkota_2025,
   author = {Roumeliotis, Konstantinos I. and Sapkota, Ranjan},
   title = {SAM3 Fine-Tuning Framework for Agricultural Instance Segmentation: A Comprehensive Comparison with YOLO11},
   year = {2025},
